@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Robotics </title>
+      </head>
+    <div>
+      <nav class="bar">
+      <a href="index.hml"> Home </a>
+      <a href="about us.html"> About us </a>
+      <a href=" contact us.html"> Contact us </a>
+      <a class="active" href="Robot info.html"> Robot Information </a>
+      <a href="Login.html"> Login </a>
+      <a href="Registration.html"> Registration </a>
+      <a href="Design your own robot.html">Create your own robot </a>
+      </div>
+<!-- Slideshow -->
+<section>
+  <center>
+  <img class="mySlides" src="robo1.jpeg" height=500px width=1385px>
+  <img class="mySlides" src="robo2.jpg" height=500px width=1385px>
+    <img class="mySlides" src="robo.jpg" height=500px width=1385px">
+      <img class="mySlides" src="robo4.jpg" height=500px width=1385px>
+      </center>
+</section>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+<p>A special video about robot rights</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DHyUYg8X31c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
